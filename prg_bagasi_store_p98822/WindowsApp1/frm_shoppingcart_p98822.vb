@@ -1,6 +1,7 @@
-﻿Imports WindowsApp1
+﻿Imports System.Data.OleDb
+Imports WindowsApp1
 
-Public Class frm_cart_p98822
+Public Class frm_shoppingcart_p98822
     Public Event BuyClick(ByVal sender As Object, ByVal e As BuyClickEventArgs)
 
     Protected Overridable Sub OnBuyClick(ByVal e As BuyClickEventArgs)
@@ -87,5 +88,44 @@ Public Class frm_cart_p98822
         End If
         RefreshCartList()
         OnBuyClick(e)
+    End Sub
+
+    Private Sub btn_CheckOut_Click(sender As Object, e As EventArgs) Handles btn_CheckOut.Click
+        Dim confirmation = MsgBox("Are you sure you want to checkout this?", MsgBoxStyle.YesNo, "Checkout")
+
+        If confirmation = MsgBoxResult.Yes Then
+            Try
+                InsertOrder()
+                InsertOrderItem()
+                Beep()
+                MsgBox("Thank you !!! " & Environment.NewLine & Environment.NewLine & "Your order had been succesfully checkout. " & Environment.NewLine & Environment.NewLine & "Please make a payment and notify the store via email at buy@bagasi.com and attach the payment proof. " & Environment.NewLine & Environment.NewLine & "You can view your order status and history at the My Previous Order menu. " & Environment.NewLine & Environment.NewLine & "The order will be cancel if there is no proof of payment within 3 days.")
+            Catch ex As Exception
+                MsgBox("Exception: " & ex.Message)
+            End Try
+        End If
+    End Sub
+
+    Private Sub InsertOrder()
+        Dim mysql As String = "insert into tbl_order_p98822 (FLD_order_code, FLD_order_customer_id, FLD_order_datetime, FLD_order_status, FLD_order_staff_id) values ('" &
+                 DateTime.Now.ToString("yyMMddHHmmss") & "'," &
+                 loggedId & ",'" &
+                 DateTime.Now.ToString("dd/MM/yyyy") & "'," &
+                 "1,1" & ")"
+
+        Using connection As OleDbConnection = New OleDbConnection(myconnection)
+            Dim command As OleDbCommand = New OleDbCommand(mysql)
+            command.Connection = connection
+
+            Try
+                connection.Open()
+                command.ExecuteNonQuery()
+            Catch ex As Exception
+                Throw ex
+            End Try
+        End Using
+    End Sub
+
+    Private Sub InsertOrderItem()
+
     End Sub
 End Class

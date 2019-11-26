@@ -43,7 +43,7 @@ Public Class frm_mainmenu_p98822
     End Sub
 
     Private Sub btn_Cart_Click(sender As Object, e As EventArgs) Handles btn_Cart.Click
-        Dim frm As New frm_cart_p98822
+        Dim frm As New frm_shoppingcart_p98822
         frm.MdiParent = Me
         AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
         frm.Dock = DockStyle.Fill
@@ -104,5 +104,27 @@ Public Class frm_mainmenu_p98822
         frm.MdiParent = Me
         frm.Dock = DockStyle.Fill
         frm.Show()
+    End Sub
+
+    Private Sub btn_customer_Click(sender As Object, e As EventArgs) Handles btn_customer.Click
+        Dim loginForm As New frm_login_customer_p98822
+
+        If btn_customer.Text = "Customer Logout" Then
+            isLogIn = False
+            btn_staff.Enabled = True
+            btn_customer.Enabled = True
+            grp_Customer.Enabled = False
+            lbl_loginInfo.Text = "Hi there, please login to purhcase!"
+            btn_customer.Text = "Customer Login"
+        Else
+            If loginForm.ShowDialog() = DialogResult.OK Then
+                lbl_loginInfo.Text = "Hi " & loggedFullName & " !. Now you can browse our Products Catalog and continue shopping. Good Day !!! "
+                grp_Customer.Enabled = True
+                btn_customer.Text = "Customer Logout"
+                btn_staff.Enabled = False
+            End If
+
+        End If
+
     End Sub
 End Class

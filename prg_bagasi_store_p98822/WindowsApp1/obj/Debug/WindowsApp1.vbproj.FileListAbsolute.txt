@@ -17,7 +17,6 @@ D:\P98822_BAGASI_STORE\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1
 D:\P98822_BAGASI_STORE\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_cart_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_mainmenu_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_orderhistory_p98822.resources
-D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_cart_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_customerlist_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_orderlist_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_productlist_p98822.resources
@@ -35,8 +34,10 @@ D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\bin\Debug\WindowsA
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.exe
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.xml
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.pdb
-D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_brandList_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_luggateTypeList_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_sizeList_p98822.resources
 D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_orderStatusList_p98822.resources
+D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_shoppingcart_p98822.resources
+D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
+D:\GitHub\simple_store_vb\prg_bagasi_store_p98822\WindowsApp1\obj\Debug\WindowsApp1.frm_login_customer_p98822.resources

@@ -24,7 +24,9 @@ Partial Class frm_orderhistory_p98822
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.dg_list = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
+        CType(Me.dg_list, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -47,20 +49,37 @@ Partial Class frm_orderhistory_p98822
         Me.Label1.Text = "ORDER LIST"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'dg_list
+        '
+        Me.dg_list.AllowUserToAddRows = False
+        Me.dg_list.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dg_list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dg_list.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dg_list.Location = New System.Drawing.Point(0, 50)
+        Me.dg_list.MultiSelect = False
+        Me.dg_list.Name = "dg_list"
+        Me.dg_list.ReadOnly = True
+        Me.dg_list.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dg_list.Size = New System.Drawing.Size(1163, 614)
+        Me.dg_list.TabIndex = 1
+        '
         'frm_orderhistory_p98822
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1163, 664)
+        Me.Controls.Add(Me.dg_list)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frm_orderhistory_p98822"
         Me.Text = "frm_products_p98822"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.dg_list, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents dg_list As DataGridView
 End Class

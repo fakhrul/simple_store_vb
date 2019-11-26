@@ -73,6 +73,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuyClickEventArgs.vb" />
+    <Compile Include="frm_profile_p98822.Designer.vb">
+      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_profile_p98822.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login_customer_p98822.Designer.vb">
+      <DependentUpon>frm_login_customer_p98822.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login_customer_p98822.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_orderStatusList_p98822.Designer.vb">
       <DependentUpon>frm_orderStatusList_p98822.vb</DependentUpon>
     </Compile>
@@ -116,10 +128,10 @@
     <Compile Include="frm_orderhistory_p98822.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_cart_p98822.Designer.vb">
-      <DependentUpon>frm_cart_p98822.vb</DependentUpon>
+    <Compile Include="frm_shoppingcart_p98822.Designer.vb">
+      <DependentUpon>frm_shoppingcart_p98822.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm_cart_p98822.vb">
+    <Compile Include="frm_shoppingcart_p98822.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_customerlist_p98822.Designer.vb">
@@ -138,12 +150,6 @@
       <DependentUpon>frm_productlist_p98822.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_productlist_p98822.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_profile_p98822.Designer.vb">
-      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_profile_p98822.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_productcatalog_p98822.Designer.vb">
@@ -176,6 +182,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_profile_p98822.resx">
+      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login_customer_p98822.resx">
+      <DependentUpon>frm_login_customer_p98822.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_orderStatusList_p98822.resx">
       <DependentUpon>frm_orderStatusList_p98822.vb</DependentUpon>
     </EmbeddedResource>
@@ -197,8 +209,8 @@
     <EmbeddedResource Include="frm_orderhistory_p98822.resx">
       <DependentUpon>frm_orderhistory_p98822.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_cart_p98822.resx">
-      <DependentUpon>frm_cart_p98822.vb</DependentUpon>
+    <EmbeddedResource Include="frm_shoppingcart_p98822.resx">
+      <DependentUpon>frm_shoppingcart_p98822.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_customerlist_p98822.resx">
       <DependentUpon>frm_customerlist_p98822.vb</DependentUpon>
@@ -208,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_productlist_p98822.resx">
       <DependentUpon>frm_productlist_p98822.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_profile_p98822.resx">
-      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_productcatalog_p98822.resx">
       <DependentUpon>frm_productcatalog_p98822.vb</DependentUpon>
@@ -236,6 +245,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -2,7 +2,7 @@
 
 Public Class frm_mainmenu_p98822
     Private Sub brn_ProductList_Click(sender As Object, e As EventArgs) Handles brn_ProductList.Click
-        Dim frm As New frm_productlist_p98822
+        Dim frm As New frm_productcatalog_p98822
         frm.MdiParent = Me
         AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
         frm.Dock = DockStyle.Fill
@@ -35,17 +35,31 @@ Public Class frm_mainmenu_p98822
     End Sub
 
     Private Sub frm_mainmenu_p98822_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim frm As New frm_productlist_p98822
-        frm.MdiParent = Me
-        AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
-        frm.Dock = DockStyle.Fill
-        frm.Show()
+        'Dim frm As New frm_productcatalog_p98822
+        'frm.MdiParent = Me
+        'AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+        'frm.Dock = DockStyle.Fill
+        'frm.Show()
     End Sub
 
     Private Sub btn_Cart_Click(sender As Object, e As EventArgs) Handles btn_Cart.Click
         Dim frm As New frm_cart_p98822
         frm.MdiParent = Me
         AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
+
+    Private Sub btn_stafProducts_Click(sender As Object, e As EventArgs) Handles btn_stafProducts.Click
+        Dim frm As New frm_productlist_p98822
+        frm.MdiParent = Me
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim frm As New frm_customerlist_p98822
+        frm.MdiParent = Me
         frm.Dock = DockStyle.Fill
         frm.Show()
     End Sub

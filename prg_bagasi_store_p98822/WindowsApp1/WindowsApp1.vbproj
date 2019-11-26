@@ -92,16 +92,28 @@
     <Compile Include="frm_cart_p98822.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_profile_p98822.Designer.vb">
-      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
+    <Compile Include="frm_customerlist_p98822.Designer.vb">
+      <DependentUpon>frm_customerlist_p98822.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm_profile_p98822.vb">
+    <Compile Include="frm_customerlist_p98822.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_productlist_p98822.Designer.vb">
       <DependentUpon>frm_productlist_p98822.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_productlist_p98822.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_profile_p98822.Designer.vb">
+      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_profile_p98822.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_productcatalog_p98822.Designer.vb">
+      <DependentUpon>frm_productcatalog_p98822.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_productcatalog_p98822.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mod_globals_p98822.vb" />
@@ -137,11 +149,17 @@
     <EmbeddedResource Include="frm_cart_p98822.resx">
       <DependentUpon>frm_cart_p98822.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_profile_p98822.resx">
-      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
+    <EmbeddedResource Include="frm_customerlist_p98822.resx">
+      <DependentUpon>frm_customerlist_p98822.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_productlist_p98822.resx">
       <DependentUpon>frm_productlist_p98822.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_profile_p98822.resx">
+      <DependentUpon>frm_profile_p98822.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_productcatalog_p98822.resx">
+      <DependentUpon>frm_productcatalog_p98822.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

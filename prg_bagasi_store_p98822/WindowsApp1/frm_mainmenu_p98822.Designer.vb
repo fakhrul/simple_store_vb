@@ -35,9 +35,10 @@ Partial Class frm_mainmenu_p98822
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.btn_stafProducts = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.btn_Cart = New System.Windows.Forms.Button()
         Me.brn_ProductList = New System.Windows.Forms.Button()
         Me.btn_Profile = New System.Windows.Forms.Button()
         Me.btn_OrderList = New System.Windows.Forms.Button()
@@ -45,7 +46,6 @@ Partial Class frm_mainmenu_p98822
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.btn_Cart = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -158,7 +158,7 @@ Partial Class frm_mainmenu_p98822
         Me.Panel8.Controls.Add(Me.Button12)
         Me.Panel8.Controls.Add(Me.Button11)
         Me.Panel8.Controls.Add(Me.Button10)
-        Me.Panel8.Controls.Add(Me.Button9)
+        Me.Panel8.Controls.Add(Me.btn_stafProducts)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel8.Location = New System.Drawing.Point(3, 16)
         Me.Panel8.Name = "Panel8"
@@ -195,15 +195,15 @@ Partial Class frm_mainmenu_p98822
         Me.Button10.Text = "Customers"
         Me.Button10.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btn_stafProducts
         '
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button9.Location = New System.Drawing.Point(0, 0)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(194, 49)
-        Me.Button9.TabIndex = 1
-        Me.Button9.Text = "Products"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btn_stafProducts.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_stafProducts.Location = New System.Drawing.Point(0, 0)
+        Me.btn_stafProducts.Name = "btn_stafProducts"
+        Me.btn_stafProducts.Size = New System.Drawing.Size(194, 49)
+        Me.btn_stafProducts.TabIndex = 1
+        Me.btn_stafProducts.Text = "Products"
+        Me.btn_stafProducts.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -227,6 +227,17 @@ Partial Class frm_mainmenu_p98822
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(194, 228)
         Me.Panel7.TabIndex = 6
+        '
+        'btn_Cart
+        '
+        Me.btn_Cart.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_Cart.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Cart.Location = New System.Drawing.Point(0, 147)
+        Me.btn_Cart.Name = "btn_Cart"
+        Me.btn_Cart.Size = New System.Drawing.Size(194, 49)
+        Me.btn_Cart.TabIndex = 6
+        Me.btn_Cart.Text = "Shopping Cart"
+        Me.btn_Cart.UseVisualStyleBackColor = True
         '
         'brn_ProductList
         '
@@ -293,17 +304,6 @@ Partial Class frm_mainmenu_p98822
         Me.Panel5.Size = New System.Drawing.Size(1024, 50)
         Me.Panel5.TabIndex = 2
         '
-        'btn_Cart
-        '
-        Me.btn_Cart.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_Cart.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Cart.Location = New System.Drawing.Point(0, 147)
-        Me.btn_Cart.Name = "btn_Cart"
-        Me.btn_Cart.Size = New System.Drawing.Size(194, 49)
-        Me.btn_Cart.TabIndex = 6
-        Me.btn_Cart.Text = "Shopping Cart"
-        Me.btn_Cart.UseVisualStyleBackColor = True
-        '
         'frm_mainmenu_p98822
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -350,6 +350,6 @@ Partial Class frm_mainmenu_p98822
     Friend WithEvents Button12 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
+    Friend WithEvents btn_stafProducts As Button
     Friend WithEvents btn_Cart As Button
 End Class

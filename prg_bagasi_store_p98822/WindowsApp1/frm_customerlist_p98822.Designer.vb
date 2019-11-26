@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frm_productlist_p98822
+Partial Class frm_customerlist_p98822
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,25 +29,16 @@ Partial Class frm_productlist_p98822
         Me.dg_list = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.btn_browse = New System.Windows.Forms.Button()
-        Me.pic_product = New System.Windows.Forms.PictureBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txt_price = New System.Windows.Forms.TextBox()
-        Me.txt_description = New System.Windows.Forms.TextBox()
-        Me.txt_fabric = New System.Windows.Forms.TextBox()
-        Me.txt_weight = New System.Windows.Forms.TextBox()
-        Me.cmb_type = New System.Windows.Forms.ComboBox()
-        Me.cmb_size = New System.Windows.Forms.ComboBox()
-        Me.cmb_brand = New System.Windows.Forms.ComboBox()
+        Me.txt_password = New System.Windows.Forms.TextBox()
+        Me.txt_address = New System.Windows.Forms.TextBox()
+        Me.txt_phone = New System.Windows.Forms.TextBox()
+        Me.txt_email = New System.Windows.Forms.TextBox()
         Me.txt_name = New System.Windows.Forms.TextBox()
         Me.txt_id = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -55,14 +46,12 @@ Partial Class frm_productlist_p98822
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.btn_refresh = New System.Windows.Forms.Button()
-        Me.txt_picture = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.dg_list, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel6.SuspendLayout()
-        CType(Me.pic_product, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,7 +72,7 @@ Partial Class frm_productlist_p98822
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(367, 50)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "PRODUCT EDITOR"
+        Me.Label1.Text = "CUSTOMER EDITOR"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Panel3
@@ -131,26 +120,16 @@ Partial Class frm_productlist_p98822
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.txt_picture)
-        Me.Panel6.Controls.Add(Me.btn_browse)
-        Me.Panel6.Controls.Add(Me.pic_product)
-        Me.Panel6.Controls.Add(Me.Label11)
-        Me.Panel6.Controls.Add(Me.txt_price)
-        Me.Panel6.Controls.Add(Me.txt_description)
-        Me.Panel6.Controls.Add(Me.txt_fabric)
-        Me.Panel6.Controls.Add(Me.txt_weight)
-        Me.Panel6.Controls.Add(Me.cmb_type)
-        Me.Panel6.Controls.Add(Me.cmb_size)
-        Me.Panel6.Controls.Add(Me.cmb_brand)
+        Me.Panel6.Controls.Add(Me.txt_password)
+        Me.Panel6.Controls.Add(Me.txt_address)
+        Me.Panel6.Controls.Add(Me.txt_phone)
+        Me.Panel6.Controls.Add(Me.txt_email)
         Me.Panel6.Controls.Add(Me.txt_name)
         Me.Panel6.Controls.Add(Me.txt_id)
         Me.Panel6.Controls.Add(Me.Label10)
         Me.Panel6.Controls.Add(Me.Label9)
         Me.Panel6.Controls.Add(Me.Label8)
-        Me.Panel6.Controls.Add(Me.Label7)
-        Me.Panel6.Controls.Add(Me.Label6)
         Me.Panel6.Controls.Add(Me.Label5)
-        Me.Panel6.Controls.Add(Me.Label4)
         Me.Panel6.Controls.Add(Me.Label3)
         Me.Panel6.Controls.Add(Me.Label2)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
@@ -159,90 +138,34 @@ Partial Class frm_productlist_p98822
         Me.Panel6.Size = New System.Drawing.Size(498, 588)
         Me.Panel6.TabIndex = 1
         '
-        'btn_browse
+        'txt_password
         '
-        Me.btn_browse.Location = New System.Drawing.Point(411, 546)
-        Me.btn_browse.Name = "btn_browse"
-        Me.btn_browse.Size = New System.Drawing.Size(75, 23)
-        Me.btn_browse.TabIndex = 20
-        Me.btn_browse.Text = "..."
-        Me.btn_browse.UseVisualStyleBackColor = True
+        Me.txt_password.Location = New System.Drawing.Point(128, 283)
+        Me.txt_password.Name = "txt_password"
+        Me.txt_password.Size = New System.Drawing.Size(358, 20)
+        Me.txt_password.TabIndex = 17
         '
-        'pic_product
+        'txt_address
         '
-        Me.pic_product.BackColor = System.Drawing.Color.White
-        Me.pic_product.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.pic_product.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pic_product.Location = New System.Drawing.Point(128, 390)
-        Me.pic_product.Name = "pic_product"
-        Me.pic_product.Size = New System.Drawing.Size(358, 150)
-        Me.pic_product.TabIndex = 19
-        Me.pic_product.TabStop = False
+        Me.txt_address.Location = New System.Drawing.Point(128, 130)
+        Me.txt_address.Multiline = True
+        Me.txt_address.Name = "txt_address"
+        Me.txt_address.Size = New System.Drawing.Size(358, 150)
+        Me.txt_address.TabIndex = 16
         '
-        'Label11
+        'txt_phone
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(26, 402)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(40, 13)
-        Me.Label11.TabIndex = 18
-        Me.Label11.Text = "Picture"
+        Me.txt_phone.Location = New System.Drawing.Point(128, 104)
+        Me.txt_phone.Name = "txt_phone"
+        Me.txt_phone.Size = New System.Drawing.Size(358, 20)
+        Me.txt_phone.TabIndex = 15
         '
-        'txt_price
+        'txt_email
         '
-        Me.txt_price.Location = New System.Drawing.Point(128, 364)
-        Me.txt_price.Name = "txt_price"
-        Me.txt_price.Size = New System.Drawing.Size(358, 20)
-        Me.txt_price.TabIndex = 17
-        '
-        'txt_description
-        '
-        Me.txt_description.Location = New System.Drawing.Point(128, 211)
-        Me.txt_description.Multiline = True
-        Me.txt_description.Name = "txt_description"
-        Me.txt_description.Size = New System.Drawing.Size(358, 150)
-        Me.txt_description.TabIndex = 16
-        '
-        'txt_fabric
-        '
-        Me.txt_fabric.Location = New System.Drawing.Point(128, 185)
-        Me.txt_fabric.Name = "txt_fabric"
-        Me.txt_fabric.Size = New System.Drawing.Size(358, 20)
-        Me.txt_fabric.TabIndex = 15
-        '
-        'txt_weight
-        '
-        Me.txt_weight.Location = New System.Drawing.Point(128, 159)
-        Me.txt_weight.Name = "txt_weight"
-        Me.txt_weight.Size = New System.Drawing.Size(358, 20)
-        Me.txt_weight.TabIndex = 14
-        '
-        'cmb_type
-        '
-        Me.cmb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_type.FormattingEnabled = True
-        Me.cmb_type.Location = New System.Drawing.Point(128, 132)
-        Me.cmb_type.Name = "cmb_type"
-        Me.cmb_type.Size = New System.Drawing.Size(358, 21)
-        Me.cmb_type.TabIndex = 13
-        '
-        'cmb_size
-        '
-        Me.cmb_size.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_size.FormattingEnabled = True
-        Me.cmb_size.Location = New System.Drawing.Point(128, 105)
-        Me.cmb_size.Name = "cmb_size"
-        Me.cmb_size.Size = New System.Drawing.Size(358, 21)
-        Me.cmb_size.TabIndex = 12
-        '
-        'cmb_brand
-        '
-        Me.cmb_brand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_brand.FormattingEnabled = True
-        Me.cmb_brand.Location = New System.Drawing.Point(128, 78)
-        Me.cmb_brand.Name = "cmb_brand"
-        Me.cmb_brand.Size = New System.Drawing.Size(358, 21)
-        Me.cmb_brand.TabIndex = 11
+        Me.txt_email.Location = New System.Drawing.Point(128, 78)
+        Me.txt_email.Name = "txt_email"
+        Me.txt_email.Size = New System.Drawing.Size(358, 20)
+        Me.txt_email.TabIndex = 14
         '
         'txt_name
         '
@@ -262,65 +185,38 @@ Partial Class frm_productlist_p98822
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(26, 188)
+        Me.Label10.Location = New System.Drawing.Point(26, 107)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(36, 13)
+        Me.Label10.Size = New System.Drawing.Size(38, 13)
         Me.Label10.TabIndex = 8
-        Me.Label10.Text = "Fabric"
+        Me.Label10.Text = "Phone"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(26, 162)
+        Me.Label9.Location = New System.Drawing.Point(26, 81)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(41, 13)
+        Me.Label9.Size = New System.Drawing.Size(32, 13)
         Me.Label9.TabIndex = 7
-        Me.Label9.Text = "Weight"
+        Me.Label9.Text = "Email"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(26, 214)
+        Me.Label8.Location = New System.Drawing.Point(26, 133)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(60, 13)
+        Me.Label8.Size = New System.Drawing.Size(45, 13)
         Me.Label8.TabIndex = 6
-        Me.Label8.Text = "Description"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(26, 135)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(31, 13)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "Type"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 108)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(27, 13)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Size"
+        Me.Label8.Text = "Address"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(26, 367)
+        Me.Label5.Location = New System.Drawing.Point(26, 286)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(31, 13)
+        Me.Label5.Size = New System.Drawing.Size(53, 13)
         Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Price"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(26, 81)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Brand"
+        Me.Label5.Text = "Password"
         '
         'Label3
         '
@@ -389,15 +285,7 @@ Partial Class frm_productlist_p98822
         Me.btn_refresh.Text = "Refresh"
         Me.btn_refresh.UseVisualStyleBackColor = True
         '
-        'txt_picture
-        '
-        Me.txt_picture.Enabled = False
-        Me.txt_picture.Location = New System.Drawing.Point(128, 547)
-        Me.txt_picture.Name = "txt_picture"
-        Me.txt_picture.Size = New System.Drawing.Size(277, 20)
-        Me.txt_picture.TabIndex = 21
-        '
-        'frm_productlist_p98822
+        'frm_customerlist_p98822
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -405,7 +293,7 @@ Partial Class frm_productlist_p98822
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frm_productlist_p98822"
+        Me.Name = "frm_customerlist_p98822"
         Me.Text = "frm_products_p98822"
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
@@ -414,7 +302,6 @@ Partial Class frm_productlist_p98822
         Me.Panel2.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
-        CType(Me.pic_product, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -431,27 +318,17 @@ Partial Class frm_productlist_p98822
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents btn_new As Button
     Friend WithEvents btn_delete As Button
     Friend WithEvents btn_add As Button
     Friend WithEvents btn_refresh As Button
-    Friend WithEvents txt_price As TextBox
-    Friend WithEvents txt_description As TextBox
-    Friend WithEvents txt_fabric As TextBox
-    Friend WithEvents txt_weight As TextBox
-    Friend WithEvents cmb_type As ComboBox
-    Friend WithEvents cmb_size As ComboBox
-    Friend WithEvents cmb_brand As ComboBox
+    Friend WithEvents txt_password As TextBox
+    Friend WithEvents txt_address As TextBox
+    Friend WithEvents txt_phone As TextBox
+    Friend WithEvents txt_email As TextBox
     Friend WithEvents txt_name As TextBox
     Friend WithEvents txt_id As TextBox
-    Friend WithEvents btn_browse As Button
-    Friend WithEvents pic_product As PictureBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents txt_picture As TextBox
 End Class

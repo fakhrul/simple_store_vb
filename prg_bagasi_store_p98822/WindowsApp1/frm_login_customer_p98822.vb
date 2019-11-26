@@ -49,7 +49,7 @@ Public Class frm_login_customer_p98822
 
     Private Function IsCustomerExist(text As String) As Boolean
         Dim count As Integer = 0
-        Dim mysql As String = "select count(*) from tbl_customer_p98822 where fld_customer_email = '" & txt_signin_email.Text & "'"
+        Dim mysql As String = "select count(*) from tbl_customer_p98822 where fld_customer_email = '" & text & "'"
         Using connection As OleDbConnection = New OleDbConnection(myconnection)
             Dim command As OleDbCommand = New OleDbCommand(mysql)
             command.Connection = connection
@@ -125,7 +125,6 @@ Public Class frm_login_customer_p98822
         Try
             If IsCustomerExist(txt_signin_email.Text) Then
                 If IsAuthenticateSuccess(txt_signin_email.Text, txt_signin_password.Text) Then
-                    MsgBox("Login Success.")
                     DialogResult = DialogResult.OK
                 Else
                     DialogResult = DialogResult.Cancel

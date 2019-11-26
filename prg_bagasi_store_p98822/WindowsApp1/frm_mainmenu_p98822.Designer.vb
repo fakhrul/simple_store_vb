@@ -30,13 +30,13 @@ Partial Class frm_mainmenu_p98822
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btn_staff = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.grp_Setting = New System.Windows.Forms.GroupBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.btn_orderStatus = New System.Windows.Forms.Button()
         Me.btn_sizes = New System.Windows.Forms.Button()
         Me.btn_luggageType = New System.Windows.Forms.Button()
         Me.btn_brand = New System.Windows.Forms.Button()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.grp_Staff = New System.Windows.Forms.GroupBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.btn_staffList = New System.Windows.Forms.Button()
         Me.btn_orderList = New System.Windows.Forms.Button()
@@ -58,9 +58,9 @@ Partial Class frm_mainmenu_p98822
         Me.Panel9.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.grp_Setting.SuspendLayout()
         Me.Panel6.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
+        Me.grp_Staff.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.grp_Customer.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -159,19 +159,19 @@ Partial Class frm_mainmenu_p98822
         Me.Panel2.Size = New System.Drawing.Size(260, 62)
         Me.Panel2.TabIndex = 0
         '
-        'GroupBox1
+        'grp_Setting
         '
-        Me.GroupBox1.Controls.Add(Me.Panel6)
-        Me.GroupBox1.Enabled = False
-        Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 627)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(233, 273)
-        Me.GroupBox1.TabIndex = 7
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Setting"
+        Me.grp_Setting.Controls.Add(Me.Panel6)
+        Me.grp_Setting.Enabled = False
+        Me.grp_Setting.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.grp_Setting.Location = New System.Drawing.Point(3, 627)
+        Me.grp_Setting.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Setting.Name = "grp_Setting"
+        Me.grp_Setting.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Setting.Size = New System.Drawing.Size(233, 273)
+        Me.grp_Setting.TabIndex = 7
+        Me.grp_Setting.TabStop = False
+        Me.grp_Setting.Text = "Setting"
         '
         'Panel6
         '
@@ -234,19 +234,19 @@ Partial Class frm_mainmenu_p98822
         Me.btn_brand.Text = "Brands"
         Me.btn_brand.UseVisualStyleBackColor = True
         '
-        'GroupBox3
+        'grp_Staff
         '
-        Me.GroupBox3.Controls.Add(Me.Panel8)
-        Me.GroupBox3.Enabled = False
-        Me.GroupBox3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 329)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox3.Size = New System.Drawing.Size(233, 290)
-        Me.GroupBox3.TabIndex = 9
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Staff Options"
+        Me.grp_Staff.Controls.Add(Me.Panel8)
+        Me.grp_Staff.Enabled = False
+        Me.grp_Staff.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.grp_Staff.Location = New System.Drawing.Point(3, 329)
+        Me.grp_Staff.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Staff.Name = "grp_Staff"
+        Me.grp_Staff.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Staff.Size = New System.Drawing.Size(233, 290)
+        Me.grp_Staff.TabIndex = 9
+        Me.grp_Staff.TabStop = False
+        Me.grp_Staff.Text = "Staff Options"
         '
         'Panel8
         '
@@ -386,8 +386,8 @@ Partial Class frm_mainmenu_p98822
         Me.FlowLayoutPanel1.AutoScroll = True
         Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox4)
         Me.FlowLayoutPanel1.Controls.Add(Me.grp_Customer)
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox3)
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox1)
+        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Staff)
+        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Setting)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -450,9 +450,9 @@ Partial Class frm_mainmenu_p98822
         Me.Panel9.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        Me.GroupBox1.ResumeLayout(False)
+        Me.grp_Setting.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
+        Me.grp_Staff.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.grp_Customer.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
@@ -476,9 +476,9 @@ Partial Class frm_mainmenu_p98822
     Friend WithEvents btn_staff As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents btn_orderStatus As Button
-    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents grp_Staff As GroupBox
     Friend WithEvents grp_Customer As GroupBox
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents grp_Setting As GroupBox
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel7 As Panel

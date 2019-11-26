@@ -73,6 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuyClickEventArgs.vb" />
+    <Compile Include="frm_login_staff.Designer.vb">
+      <DependentUpon>frm_login_staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login_staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_profile_p98822.Designer.vb">
       <DependentUpon>frm_profile_p98822.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_login_staff.resx">
+      <DependentUpon>frm_login_staff.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_profile_p98822.resx">
       <DependentUpon>frm_profile_p98822.vb</DependentUpon>
     </EmbeddedResource>

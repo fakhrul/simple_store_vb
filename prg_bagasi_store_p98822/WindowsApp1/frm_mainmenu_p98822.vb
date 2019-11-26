@@ -35,11 +35,11 @@ Public Class frm_mainmenu_p98822
     End Sub
 
     Private Sub frm_mainmenu_p98822_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim frm As New frm_productcatalog_p98822
-        'frm.MdiParent = Me
-        'AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
-        'frm.Dock = DockStyle.Fill
-        'frm.Show()
+        Dim frm As New frm_productcatalog_p98822
+        frm.MdiParent = Me
+        AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+        frm.Dock = DockStyle.Fill
+        frm.Show()
     End Sub
 
     Private Sub btn_Cart_Click(sender As Object, e As EventArgs) Handles btn_Cart.Click
@@ -116,15 +116,68 @@ Public Class frm_mainmenu_p98822
             grp_Customer.Enabled = False
             lbl_loginInfo.Text = "Hi there, please login to purhcase!"
             btn_customer.Text = "Customer Login"
+            Dim frm As New frm_productcatalog_p98822
+            frm.MdiParent = Me
+            AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+            frm.Dock = DockStyle.Fill
+            frm.Show()
         Else
             If loginForm.ShowDialog() = DialogResult.OK Then
                 lbl_loginInfo.Text = "Hi " & loggedFullName & " !. Now you can browse our Products Catalog and continue shopping. Good Day !!! "
                 grp_Customer.Enabled = True
                 btn_customer.Text = "Customer Logout"
                 btn_staff.Enabled = False
+
+                Dim frm As New frm_productcatalog_p98822
+                frm.MdiParent = Me
+                AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+                frm.Dock = DockStyle.Fill
+                frm.Show()
             End If
 
         End If
+
+
+    End Sub
+
+    Private Sub btn_staff_Click(sender As Object, e As EventArgs) Handles btn_staff.Click
+
+        Dim loginForm As New frm_login_staff
+
+        If btn_staff.Text = "Staff Logout" Then
+            isLogIn = False
+            btn_staff.Enabled = True
+            btn_customer.Enabled = True
+            grp_Customer.Enabled = False
+            grp_Staff.Enabled = False
+            grp_Setting.Enabled = False
+
+            lbl_loginInfo.Text = "Hi there, please login to purhcase!"
+            btn_staff.Text = "Staff Login"
+
+            Dim frm As New frm_productcatalog_p98822
+            frm.MdiParent = Me
+            AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+            frm.Dock = DockStyle.Fill
+            frm.Show()
+        Else
+            If loginForm.ShowDialog() = DialogResult.OK Then
+                lbl_loginInfo.Text = "Welcome " & loggedFullName & " !. Your are the staff here. Now you can manage this shop !!! "
+                grp_Customer.Enabled = False
+                grp_Staff.Enabled = True
+                grp_Setting.Enabled = True
+                btn_staff.Text = "Staff Logout"
+                btn_customer.Enabled = False
+
+                Dim frm As New frm_productcatalog_p98822
+                frm.MdiParent = Me
+                AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+                frm.Dock = DockStyle.Fill
+                frm.Show()
+            End If
+
+        End If
+
 
     End Sub
 End Class

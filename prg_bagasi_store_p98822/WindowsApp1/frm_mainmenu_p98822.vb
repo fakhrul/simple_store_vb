@@ -77,4 +77,32 @@ Public Class frm_mainmenu_p98822
         frm.Dock = DockStyle.Fill
         frm.Show()
     End Sub
+
+    Private Sub btn_brand_Click(sender As Object, e As EventArgs) Handles btn_brand.Click
+        Dim frm As New frm_brandList_p98822
+        frm.MdiParent = Me
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
+
+    Private Sub btn_luggageType_Click(sender As Object, e As EventArgs) Handles btn_luggageType.Click
+        Dim frm As New frm_luggateTypeList_p98822
+        frm.MdiParent = Me
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
+
+    Private Sub btn_sizes_Click(sender As Object, e As EventArgs) Handles btn_sizes.Click
+        Dim frm As New frm_sizeList_p98822
+        frm.MdiParent = Me
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
+
+    Private Sub btn_orderStatus_Click(sender As Object, e As EventArgs) Handles btn_orderStatus.Click
+        Dim frm As New frm_orderStatusList_p98822
+        frm.MdiParent = Me
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
 End Class

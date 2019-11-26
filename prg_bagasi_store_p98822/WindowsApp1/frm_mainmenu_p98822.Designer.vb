@@ -26,10 +26,10 @@ Partial Class frm_mainmenu_p98822
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_orderStatus = New System.Windows.Forms.Button()
+        Me.btn_sizes = New System.Windows.Forms.Button()
+        Me.btn_luggageType = New System.Windows.Forms.Button()
+        Me.btn_brand = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.btn_staffList = New System.Windows.Forms.Button()
@@ -65,7 +65,7 @@ Partial Class frm_mainmenu_p98822
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 796)
+        Me.Panel1.Size = New System.Drawing.Size(200, 891)
         Me.Panel1.TabIndex = 1
         '
         'Panel4
@@ -76,7 +76,7 @@ Partial Class frm_mainmenu_p98822
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 50)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(200, 646)
+        Me.Panel4.Size = New System.Drawing.Size(200, 741)
         Me.Panel4.TabIndex = 2
         '
         'GroupBox1
@@ -92,55 +92,55 @@ Partial Class frm_mainmenu_p98822
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.Button8)
-        Me.Panel6.Controls.Add(Me.Button4)
-        Me.Panel6.Controls.Add(Me.Button3)
-        Me.Panel6.Controls.Add(Me.Button2)
+        Me.Panel6.Controls.Add(Me.btn_orderStatus)
+        Me.Panel6.Controls.Add(Me.btn_sizes)
+        Me.Panel6.Controls.Add(Me.btn_luggageType)
+        Me.Panel6.Controls.Add(Me.btn_brand)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel6.Location = New System.Drawing.Point(3, 16)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(194, 203)
         Me.Panel6.TabIndex = 0
         '
-        'Button8
+        'btn_orderStatus
         '
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button8.Location = New System.Drawing.Point(0, 147)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(194, 49)
-        Me.Button8.TabIndex = 6
-        Me.Button8.Text = "Order Status"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btn_orderStatus.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_orderStatus.Location = New System.Drawing.Point(0, 147)
+        Me.btn_orderStatus.Name = "btn_orderStatus"
+        Me.btn_orderStatus.Size = New System.Drawing.Size(194, 49)
+        Me.btn_orderStatus.TabIndex = 6
+        Me.btn_orderStatus.Text = "Order Status"
+        Me.btn_orderStatus.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_sizes
         '
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button4.Location = New System.Drawing.Point(0, 98)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(194, 49)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Sizes"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_sizes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_sizes.Location = New System.Drawing.Point(0, 98)
+        Me.btn_sizes.Name = "btn_sizes"
+        Me.btn_sizes.Size = New System.Drawing.Size(194, 49)
+        Me.btn_sizes.TabIndex = 3
+        Me.btn_sizes.Text = "Sizes"
+        Me.btn_sizes.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_luggageType
         '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button3.Location = New System.Drawing.Point(0, 49)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(194, 49)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Luggage Types"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_luggageType.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_luggageType.Location = New System.Drawing.Point(0, 49)
+        Me.btn_luggageType.Name = "btn_luggageType"
+        Me.btn_luggageType.Size = New System.Drawing.Size(194, 49)
+        Me.btn_luggageType.TabIndex = 2
+        Me.btn_luggageType.Text = "Luggage Types"
+        Me.btn_luggageType.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_brand
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button2.Location = New System.Drawing.Point(0, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(194, 49)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Brands"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_brand.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_brand.Location = New System.Drawing.Point(0, 0)
+        Me.btn_brand.Name = "btn_brand"
+        Me.btn_brand.Size = New System.Drawing.Size(194, 49)
+        Me.btn_brand.TabIndex = 1
+        Me.btn_brand.Text = "Brands"
+        Me.btn_brand.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -273,7 +273,7 @@ Partial Class frm_mainmenu_p98822
         '
         Me.Panel3.Controls.Add(Me.Button7)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 696)
+        Me.Panel3.Location = New System.Drawing.Point(0, 791)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(200, 100)
         Me.Panel3.TabIndex = 1
@@ -308,7 +308,7 @@ Partial Class frm_mainmenu_p98822
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1224, 796)
+        Me.ClientSize = New System.Drawing.Size(1224, 891)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel1)
         Me.IsMdiContainer = True
@@ -334,13 +334,13 @@ Partial Class frm_mainmenu_p98822
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btn_OrderHistory As Button
     Friend WithEvents btn_Profile As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btn_sizes As Button
+    Friend WithEvents btn_luggageType As Button
+    Friend WithEvents btn_brand As Button
     Friend WithEvents brn_ProductList As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Button8 As Button
+    Friend WithEvents btn_orderStatus As Button
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox1 As GroupBox

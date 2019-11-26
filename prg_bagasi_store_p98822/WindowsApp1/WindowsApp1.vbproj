@@ -73,6 +73,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuyClickEventArgs.vb" />
+    <Compile Include="frm_orderStatusList_p98822.Designer.vb">
+      <DependentUpon>frm_orderStatusList_p98822.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_orderStatusList_p98822.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_sizeList_p98822.Designer.vb">
+      <DependentUpon>frm_sizeList_p98822.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sizeList_p98822.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_luggateTypeList_p98822.Designer.vb">
+      <DependentUpon>frm_luggateTypeList_p98822.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_luggateTypeList_p98822.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_brandList_p98822.Designer.vb">
       <DependentUpon>frm_brandList_p98822.vb</DependentUpon>
     </Compile>
@@ -158,6 +176,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_orderStatusList_p98822.resx">
+      <DependentUpon>frm_orderStatusList_p98822.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sizeList_p98822.resx">
+      <DependentUpon>frm_sizeList_p98822.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_luggateTypeList_p98822.resx">
+      <DependentUpon>frm_luggateTypeList_p98822.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_brandList_p98822.resx">
       <DependentUpon>frm_brandList_p98822.vb</DependentUpon>
     </EmbeddedResource>

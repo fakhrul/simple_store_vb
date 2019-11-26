@@ -1,7 +1,7 @@
 ﻿Imports System.Data.OleDb
 Imports WindowsApp1
 
-Public Class frm_brandList_p98822
+Public Class frm_sizeList_p98822
     Dim selected_code As Integer
 
     Private Sub frm_productlist_p98822_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -9,7 +9,7 @@ Public Class frm_brandList_p98822
     End Sub
 
     Private Sub RefreshGrid()
-        Dim sql As String = "select * from tbl_brand_p98822 "
+        Dim sql As String = "select * from tbl_size_p98822 "
         dg_list.DataSource = run_select(sql)
     End Sub
 
@@ -37,6 +37,9 @@ Public Class frm_brandList_p98822
             If Not IsDBNull(dg_list(1, current_row).Value) Then
                 txt_name.Text = dg_list(1, current_row).Value
             End If
+            If Not IsDBNull(dg_list(2, current_row).Value) Then
+                txt_description.Text = dg_list(2, current_row).Value
+            End If
 
 
             btn_add.Text = "Update"
@@ -56,7 +59,7 @@ Public Class frm_brandList_p98822
     Private Sub ClearForm()
         txt_id.Text = ""
         txt_name.Text = ""
-
+        txt_description.Text = ""
 
         btn_add.Text = "Save"
         btn_delete.Enabled = False
@@ -77,9 +80,9 @@ Public Class frm_brandList_p98822
     End Sub
 
     Private Sub UpdateProduct()
-        Dim mysql As String = "update tbl_brand_p98822 set " &
-            "FLD_brand_name = '" & txt_name.Text & "' " &
-            "WHERE FLD_brand_ID = " & txt_id.Text
+        Dim mysql As String = "update tbl_size_p98822 set FLD_size_NAME = '" & txt_name.Text & "'," &
+            "fld_size_description = '" & txt_description.Text & "' " &
+            "WHERE FLD_size_ID = " & txt_id.Text
 
         Using connection As OleDbConnection = New OleDbConnection(myconnection)
             Dim command As OleDbCommand = New OleDbCommand(mysql)
@@ -99,8 +102,9 @@ Public Class frm_brandList_p98822
     End Sub
 
     Private Sub AddNewProduct()
-        Dim mysql As String = "insert into tbl_brand_p98822 (FLD_brand_name) values ('" &
-            txt_name.Text & "')"
+        Dim mysql As String = "insert into tbl_size_p98822 (FLD_size_name, fld_size_description) values ('" &
+            txt_name.Text & "','" &
+            txt_description.Text & "')"
 
         Using connection As OleDbConnection = New OleDbConnection(myconnection)
             Dim command As OleDbCommand = New OleDbCommand(mysql)
@@ -124,7 +128,7 @@ Public Class frm_brandList_p98822
         Dim delete_confirmation = MsgBox("Are you sure you want to delete item " & txt_id.Text & "?", MsgBoxStyle.YesNo, "WARNING!")
 
         If delete_confirmation = MsgBoxResult.Yes Then
-            run_command("delete from tbl_brand_p98822 where fld_brand_id = " & txt_id.Text & "")
+            run_command("delete from tbl_size_p98822 where fld_size_id = " & txt_id.Text & "")
 
             Beep()
             MsgBox("The item'" & txt_id.Text & "' has been deleted successfully.")

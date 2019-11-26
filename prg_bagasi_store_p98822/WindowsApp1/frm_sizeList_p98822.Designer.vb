@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frm_brandList_p98822
+Partial Class frm_sizeList_p98822
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -38,6 +38,8 @@ Partial Class frm_brandList_p98822
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.btn_refresh = New System.Windows.Forms.Button()
+        Me.txt_description = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -64,7 +66,7 @@ Partial Class frm_brandList_p98822
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(495, 50)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "BRAND EDITOR"
+        Me.Label1.Text = "SIZE EDITOR"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Panel3
@@ -112,6 +114,8 @@ Partial Class frm_brandList_p98822
         '
         'Panel6
         '
+        Me.Panel6.Controls.Add(Me.txt_description)
+        Me.Panel6.Controls.Add(Me.Label4)
         Me.Panel6.Controls.Add(Me.txt_name)
         Me.Panel6.Controls.Add(Me.txt_id)
         Me.Panel6.Controls.Add(Me.Label3)
@@ -204,7 +208,24 @@ Partial Class frm_brandList_p98822
         Me.btn_refresh.Text = "Refresh"
         Me.btn_refresh.UseVisualStyleBackColor = True
         '
-        'frm_brandList_p98822
+        'txt_description
+        '
+        Me.txt_description.Location = New System.Drawing.Point(128, 78)
+        Me.txt_description.Multiline = True
+        Me.txt_description.Name = "txt_description"
+        Me.txt_description.Size = New System.Drawing.Size(358, 80)
+        Me.txt_description.TabIndex = 12
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(26, 81)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(60, 13)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Description"
+        '
+        'frm_sizeList_p98822
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -212,7 +233,7 @@ Partial Class frm_brandList_p98822
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frm_brandList_p98822"
+        Me.Name = "frm_sizeList_p98822"
         Me.Text = "frm_products_p98822"
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
@@ -242,4 +263,6 @@ Partial Class frm_brandList_p98822
     Friend WithEvents btn_refresh As Button
     Friend WithEvents txt_name As TextBox
     Friend WithEvents txt_id As TextBox
+    Friend WithEvents txt_description As TextBox
+    Friend WithEvents Label4 As Label
 End Class

@@ -20,8 +20,8 @@ Public Class frm_mainmenu_p98822
 
     End Sub
 
-    Private Sub btn_OrderList_Click(sender As Object, e As EventArgs) Handles btn_OrderList.Click
-        Dim frm As New frm_orderlist_p98822
+    Private Sub btn_OrderList_Click(sender As Object, e As EventArgs) Handles btn_OrderHistory.Click
+        Dim frm As New frm_orderhistory_p98822
         frm.MdiParent = Me
         frm.Dock = DockStyle.Fill
         frm.Show()
@@ -51,7 +51,7 @@ Public Class frm_mainmenu_p98822
     End Sub
 
     Private Sub btn_stafProducts_Click(sender As Object, e As EventArgs) Handles btn_stafProducts.Click
-        Dim frm As New frm_productlist_p98822
+        Dim frm As New frm_stafflist_p98822
         frm.MdiParent = Me
         frm.Dock = DockStyle.Fill
         frm.Show()
@@ -59,6 +59,20 @@ Public Class frm_mainmenu_p98822
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         Dim frm As New frm_customerlist_p98822
+        frm.MdiParent = Me
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
+
+    Private Sub btn_orderList_Click_1(sender As Object, e As EventArgs) Handles btn_orderList.Click
+        Dim frm As New frm_orderlist_p98822
+        frm.MdiParent = Me
+        frm.Dock = DockStyle.Fill
+        frm.Show()
+    End Sub
+
+    Private Sub btn_staffList_Click(sender As Object, e As EventArgs) Handles btn_staffList.Click
+        Dim frm As New frm_stafflist_p98822
         frm.MdiParent = Me
         frm.Dock = DockStyle.Fill
         frm.Show()

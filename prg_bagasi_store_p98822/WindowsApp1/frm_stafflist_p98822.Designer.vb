@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frm_orderlist_p98822
+Partial Class frm_stafflist_p98822
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,23 +29,23 @@ Partial Class frm_orderlist_p98822
         Me.dg_list = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.txt_remarks = New System.Windows.Forms.TextBox()
-        Me.txt_date = New System.Windows.Forms.TextBox()
-        Me.cmb_status = New System.Windows.Forms.ComboBox()
-        Me.cmb_staff = New System.Windows.Forms.ComboBox()
-        Me.txt_code = New System.Windows.Forms.TextBox()
+        Me.txt_password = New System.Windows.Forms.TextBox()
+        Me.txt_username = New System.Windows.Forms.TextBox()
+        Me.txt_phone = New System.Windows.Forms.TextBox()
+        Me.txt_email = New System.Windows.Forms.TextBox()
+        Me.txt_name = New System.Windows.Forms.TextBox()
         Me.txt_id = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btn_new = New System.Windows.Forms.Button()
+        Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.btn_refresh = New System.Windows.Forms.Button()
-        Me.txt_full_name = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -68,11 +68,11 @@ Partial Class frm_orderlist_p98822
         '
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(825, 0)
+        Me.Label1.Location = New System.Drawing.Point(757, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(427, 50)
+        Me.Label1.Size = New System.Drawing.Size(495, 50)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ORDER EDITOR"
+        Me.Label1.Text = "STAFF EDITOR"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Panel3
@@ -120,18 +120,16 @@ Partial Class frm_orderlist_p98822
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.txt_full_name)
-        Me.Panel6.Controls.Add(Me.txt_remarks)
-        Me.Panel6.Controls.Add(Me.txt_date)
-        Me.Panel6.Controls.Add(Me.cmb_status)
-        Me.Panel6.Controls.Add(Me.cmb_staff)
-        Me.Panel6.Controls.Add(Me.txt_code)
+        Me.Panel6.Controls.Add(Me.txt_password)
+        Me.Panel6.Controls.Add(Me.txt_username)
+        Me.Panel6.Controls.Add(Me.txt_phone)
+        Me.Panel6.Controls.Add(Me.txt_email)
+        Me.Panel6.Controls.Add(Me.txt_name)
         Me.Panel6.Controls.Add(Me.txt_id)
+        Me.Panel6.Controls.Add(Me.Label10)
         Me.Panel6.Controls.Add(Me.Label9)
         Me.Panel6.Controls.Add(Me.Label8)
-        Me.Panel6.Controls.Add(Me.Label7)
-        Me.Panel6.Controls.Add(Me.Label6)
-        Me.Panel6.Controls.Add(Me.Label4)
+        Me.Panel6.Controls.Add(Me.Label5)
         Me.Panel6.Controls.Add(Me.Label3)
         Me.Panel6.Controls.Add(Me.Label2)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
@@ -140,47 +138,40 @@ Partial Class frm_orderlist_p98822
         Me.Panel6.Size = New System.Drawing.Size(498, 588)
         Me.Panel6.TabIndex = 1
         '
-        'txt_remarks
+        'txt_password
         '
-        Me.txt_remarks.Location = New System.Drawing.Point(128, 211)
-        Me.txt_remarks.Multiline = True
-        Me.txt_remarks.Name = "txt_remarks"
-        Me.txt_remarks.Size = New System.Drawing.Size(358, 150)
-        Me.txt_remarks.TabIndex = 16
+        Me.txt_password.Location = New System.Drawing.Point(128, 156)
+        Me.txt_password.Name = "txt_password"
+        Me.txt_password.Size = New System.Drawing.Size(358, 20)
+        Me.txt_password.TabIndex = 17
         '
-        'txt_date
+        'txt_username
         '
-        Me.txt_date.Location = New System.Drawing.Point(128, 159)
-        Me.txt_date.Name = "txt_date"
-        Me.txt_date.ReadOnly = True
-        Me.txt_date.Size = New System.Drawing.Size(358, 20)
-        Me.txt_date.TabIndex = 14
+        Me.txt_username.Location = New System.Drawing.Point(128, 130)
+        Me.txt_username.Name = "txt_username"
+        Me.txt_username.Size = New System.Drawing.Size(358, 20)
+        Me.txt_username.TabIndex = 16
         '
-        'cmb_status
+        'txt_phone
         '
-        Me.cmb_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_status.FormattingEnabled = True
-        Me.cmb_status.Location = New System.Drawing.Point(128, 132)
-        Me.cmb_status.Name = "cmb_status"
-        Me.cmb_status.Size = New System.Drawing.Size(358, 21)
-        Me.cmb_status.TabIndex = 13
+        Me.txt_phone.Location = New System.Drawing.Point(128, 104)
+        Me.txt_phone.Name = "txt_phone"
+        Me.txt_phone.Size = New System.Drawing.Size(358, 20)
+        Me.txt_phone.TabIndex = 15
         '
-        'cmb_staff
+        'txt_email
         '
-        Me.cmb_staff.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_staff.FormattingEnabled = True
-        Me.cmb_staff.Location = New System.Drawing.Point(128, 105)
-        Me.cmb_staff.Name = "cmb_staff"
-        Me.cmb_staff.Size = New System.Drawing.Size(358, 21)
-        Me.cmb_staff.TabIndex = 12
+        Me.txt_email.Location = New System.Drawing.Point(128, 78)
+        Me.txt_email.Name = "txt_email"
+        Me.txt_email.Size = New System.Drawing.Size(358, 20)
+        Me.txt_email.TabIndex = 14
         '
-        'txt_code
+        'txt_name
         '
-        Me.txt_code.Location = New System.Drawing.Point(128, 52)
-        Me.txt_code.Name = "txt_code"
-        Me.txt_code.ReadOnly = True
-        Me.txt_code.Size = New System.Drawing.Size(358, 20)
-        Me.txt_code.TabIndex = 10
+        Me.txt_name.Location = New System.Drawing.Point(128, 52)
+        Me.txt_name.Name = "txt_name"
+        Me.txt_name.Size = New System.Drawing.Size(358, 20)
+        Me.txt_name.TabIndex = 10
         '
         'txt_id
         '
@@ -190,59 +181,50 @@ Partial Class frm_orderlist_p98822
         Me.txt_id.Size = New System.Drawing.Size(358, 20)
         Me.txt_id.TabIndex = 9
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(26, 107)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(38, 13)
+        Me.Label10.TabIndex = 8
+        Me.Label10.Text = "Phone"
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(26, 162)
+        Me.Label9.Location = New System.Drawing.Point(26, 81)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(59, 13)
+        Me.Label9.Size = New System.Drawing.Size(32, 13)
         Me.Label9.TabIndex = 7
-        Me.Label9.Text = "Order Date"
+        Me.Label9.Text = "Email"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(26, 214)
+        Me.Label8.Location = New System.Drawing.Point(26, 133)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 13)
+        Me.Label8.Size = New System.Drawing.Size(60, 13)
         Me.Label8.TabIndex = 6
-        Me.Label8.Text = "Remraks"
+        Me.Label8.Text = "User Name"
         '
-        'Label7
+        'Label5
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(26, 135)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 13)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "Status"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 108)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 13)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Staff"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(26, 81)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 13)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Customer"
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(26, 159)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(53, 13)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Password"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(26, 55)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 13)
+        Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Oder Code"
+        Me.Label3.Text = "Name"
         '
         'Label2
         '
@@ -255,6 +237,8 @@ Partial Class frm_orderlist_p98822
         '
         'Panel5
         '
+        Me.Panel5.Controls.Add(Me.btn_new)
+        Me.Panel5.Controls.Add(Me.btn_delete)
         Me.Panel5.Controls.Add(Me.btn_add)
         Me.Panel5.Controls.Add(Me.btn_refresh)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -263,9 +247,28 @@ Partial Class frm_orderlist_p98822
         Me.Panel5.Size = New System.Drawing.Size(498, 64)
         Me.Panel5.TabIndex = 0
         '
+        'btn_new
+        '
+        Me.btn_new.Location = New System.Drawing.Point(112, 6)
+        Me.btn_new.Name = "btn_new"
+        Me.btn_new.Size = New System.Drawing.Size(100, 50)
+        Me.btn_new.TabIndex = 3
+        Me.btn_new.Text = "New"
+        Me.btn_new.UseVisualStyleBackColor = True
+        '
+        'btn_delete
+        '
+        Me.btn_delete.Enabled = False
+        Me.btn_delete.Location = New System.Drawing.Point(395, 6)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.Size = New System.Drawing.Size(100, 50)
+        Me.btn_delete.TabIndex = 2
+        Me.btn_delete.Text = "Delete"
+        Me.btn_delete.UseVisualStyleBackColor = True
+        '
         'btn_add
         '
-        Me.btn_add.Location = New System.Drawing.Point(386, 6)
+        Me.btn_add.Location = New System.Drawing.Point(289, 6)
         Me.btn_add.Name = "btn_add"
         Me.btn_add.Size = New System.Drawing.Size(100, 50)
         Me.btn_add.TabIndex = 1
@@ -281,15 +284,7 @@ Partial Class frm_orderlist_p98822
         Me.btn_refresh.Text = "Refresh"
         Me.btn_refresh.UseVisualStyleBackColor = True
         '
-        'txt_full_name
-        '
-        Me.txt_full_name.Location = New System.Drawing.Point(128, 78)
-        Me.txt_full_name.Name = "txt_full_name"
-        Me.txt_full_name.ReadOnly = True
-        Me.txt_full_name.Size = New System.Drawing.Size(358, 20)
-        Me.txt_full_name.TabIndex = 17
-        '
-        'frm_orderlist_p98822
+        'frm_stafflist_p98822
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -297,7 +292,7 @@ Partial Class frm_orderlist_p98822
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frm_orderlist_p98822"
+        Me.Name = "frm_stafflist_p98822"
         Me.Text = "frm_products_p98822"
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
@@ -319,21 +314,20 @@ Partial Class frm_orderlist_p98822
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel5 As Panel
+    Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents btn_new As Button
+    Friend WithEvents btn_delete As Button
     Friend WithEvents btn_add As Button
     Friend WithEvents btn_refresh As Button
-    Friend WithEvents txt_remarks As TextBox
-    Friend WithEvents txt_date As TextBox
-    Friend WithEvents cmb_status As ComboBox
-    Friend WithEvents cmb_staff As ComboBox
-    Friend WithEvents txt_code As TextBox
+    Friend WithEvents txt_password As TextBox
+    Friend WithEvents txt_username As TextBox
+    Friend WithEvents txt_phone As TextBox
+    Friend WithEvents txt_email As TextBox
+    Friend WithEvents txt_name As TextBox
     Friend WithEvents txt_id As TextBox
-    Friend WithEvents txt_full_name As TextBox
 End Class

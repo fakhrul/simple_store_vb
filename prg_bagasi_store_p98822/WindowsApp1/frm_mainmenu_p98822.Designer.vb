@@ -32,8 +32,8 @@ Partial Class frm_mainmenu_p98822
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.btn_staffList = New System.Windows.Forms.Button()
+        Me.btn_orderList = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.btn_stafProducts = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -41,7 +41,7 @@ Partial Class frm_mainmenu_p98822
         Me.btn_Cart = New System.Windows.Forms.Button()
         Me.brn_ProductList = New System.Windows.Forms.Button()
         Me.btn_Profile = New System.Windows.Forms.Button()
-        Me.btn_OrderList = New System.Windows.Forms.Button()
+        Me.btn_OrderHistory = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -155,8 +155,8 @@ Partial Class frm_mainmenu_p98822
         '
         'Panel8
         '
-        Me.Panel8.Controls.Add(Me.Button12)
-        Me.Panel8.Controls.Add(Me.Button11)
+        Me.Panel8.Controls.Add(Me.btn_staffList)
+        Me.Panel8.Controls.Add(Me.btn_orderList)
         Me.Panel8.Controls.Add(Me.Button10)
         Me.Panel8.Controls.Add(Me.btn_stafProducts)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
@@ -165,25 +165,25 @@ Partial Class frm_mainmenu_p98822
         Me.Panel8.Size = New System.Drawing.Size(194, 217)
         Me.Panel8.TabIndex = 0
         '
-        'Button12
+        'btn_staffList
         '
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button12.Location = New System.Drawing.Point(0, 147)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(194, 49)
-        Me.Button12.TabIndex = 7
-        Me.Button12.Text = "My Profile"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.btn_staffList.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_staffList.Location = New System.Drawing.Point(0, 147)
+        Me.btn_staffList.Name = "btn_staffList"
+        Me.btn_staffList.Size = New System.Drawing.Size(194, 49)
+        Me.btn_staffList.TabIndex = 7
+        Me.btn_staffList.Text = "Staff"
+        Me.btn_staffList.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btn_orderList
         '
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button11.Location = New System.Drawing.Point(0, 98)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(194, 49)
-        Me.Button11.TabIndex = 6
-        Me.Button11.Text = "Orders"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btn_orderList.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_orderList.Location = New System.Drawing.Point(0, 98)
+        Me.btn_orderList.Name = "btn_orderList"
+        Me.btn_orderList.Size = New System.Drawing.Size(194, 49)
+        Me.btn_orderList.TabIndex = 6
+        Me.btn_orderList.Text = "Orders"
+        Me.btn_orderList.UseVisualStyleBackColor = True
         '
         'Button10
         '
@@ -221,7 +221,7 @@ Partial Class frm_mainmenu_p98822
         Me.Panel7.Controls.Add(Me.btn_Cart)
         Me.Panel7.Controls.Add(Me.brn_ProductList)
         Me.Panel7.Controls.Add(Me.btn_Profile)
-        Me.Panel7.Controls.Add(Me.btn_OrderList)
+        Me.Panel7.Controls.Add(Me.btn_OrderHistory)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(3, 16)
         Me.Panel7.Name = "Panel7"
@@ -259,15 +259,15 @@ Partial Class frm_mainmenu_p98822
         Me.btn_Profile.Text = "My Profile"
         Me.btn_Profile.UseVisualStyleBackColor = True
         '
-        'btn_OrderList
+        'btn_OrderHistory
         '
-        Me.btn_OrderList.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_OrderList.Location = New System.Drawing.Point(0, 0)
-        Me.btn_OrderList.Name = "btn_OrderList"
-        Me.btn_OrderList.Size = New System.Drawing.Size(194, 49)
-        Me.btn_OrderList.TabIndex = 5
-        Me.btn_OrderList.Text = "My Previous Order"
-        Me.btn_OrderList.UseVisualStyleBackColor = True
+        Me.btn_OrderHistory.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_OrderHistory.Location = New System.Drawing.Point(0, 0)
+        Me.btn_OrderHistory.Name = "btn_OrderHistory"
+        Me.btn_OrderHistory.Size = New System.Drawing.Size(194, 49)
+        Me.btn_OrderHistory.TabIndex = 5
+        Me.btn_OrderHistory.Text = "My Previous Order"
+        Me.btn_OrderHistory.UseVisualStyleBackColor = True
         '
         'Panel3
         '
@@ -332,7 +332,7 @@ Partial Class frm_mainmenu_p98822
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents btn_OrderList As Button
+    Friend WithEvents btn_OrderHistory As Button
     Friend WithEvents btn_Profile As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
@@ -347,8 +347,8 @@ Partial Class frm_mainmenu_p98822
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents btn_staffList As Button
+    Friend WithEvents btn_orderList As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents btn_stafProducts As Button
     Friend WithEvents btn_Cart As Button

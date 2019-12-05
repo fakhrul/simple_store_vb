@@ -22,6 +22,7 @@ Partial Class frm_login_staff
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_login_staff))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_signin_email = New System.Windows.Forms.TextBox()
@@ -34,7 +35,7 @@ Partial Class frm_login_staff
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 165)
+        Me.Label1.Location = New System.Drawing.Point(34, 59)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(93, 19)
@@ -44,7 +45,7 @@ Partial Class frm_login_staff
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 212)
+        Me.Label2.Location = New System.Drawing.Point(34, 106)
         Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(80, 19)
@@ -53,7 +54,7 @@ Partial Class frm_login_staff
         '
         'txt_signin_email
         '
-        Me.txt_signin_email.Location = New System.Drawing.Point(177, 158)
+        Me.txt_signin_email.Location = New System.Drawing.Point(171, 52)
         Me.txt_signin_email.Margin = New System.Windows.Forms.Padding(5)
         Me.txt_signin_email.MaxLength = 50
         Me.txt_signin_email.Name = "txt_signin_email"
@@ -63,7 +64,7 @@ Partial Class frm_login_staff
         '
         'txt_signin_password
         '
-        Me.txt_signin_password.Location = New System.Drawing.Point(177, 207)
+        Me.txt_signin_password.Location = New System.Drawing.Point(171, 101)
         Me.txt_signin_password.Margin = New System.Windows.Forms.Padding(5)
         Me.txt_signin_password.MaxLength = 50
         Me.txt_signin_password.Name = "txt_signin_password"
@@ -84,17 +85,17 @@ Partial Class frm_login_staff
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(5)
-        Me.GroupBox1.Size = New System.Drawing.Size(573, 475)
+        Me.GroupBox1.Size = New System.Drawing.Size(573, 235)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Existing Customer"
+        Me.GroupBox1.Text = "Staff Login"
         '
         'btn_signIn
         '
-        Me.btn_signIn.Location = New System.Drawing.Point(337, 258)
+        Me.btn_signIn.Location = New System.Drawing.Point(345, 138)
         Me.btn_signIn.Margin = New System.Windows.Forms.Padding(5)
         Me.btn_signIn.Name = "btn_signIn"
-        Me.btn_signIn.Size = New System.Drawing.Size(167, 81)
+        Me.btn_signIn.Size = New System.Drawing.Size(150, 50)
         Me.btn_signIn.TabIndex = 2
         Me.btn_signIn.Text = "Sign In"
         Me.btn_signIn.UseVisualStyleBackColor = True
@@ -103,9 +104,10 @@ Partial Class frm_login_staff
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(612, 518)
+        Me.ClientSize = New System.Drawing.Size(612, 266)
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "frm_login_staff"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

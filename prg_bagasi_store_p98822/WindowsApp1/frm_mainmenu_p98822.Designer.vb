@@ -22,50 +22,51 @@ Partial Class frm_mainmenu_p98822
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_mainmenu_p98822))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.brn_ProductList = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btn_staff = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.grp_Setting = New System.Windows.Forms.GroupBox()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.btn_orderStatus = New System.Windows.Forms.Button()
-        Me.btn_sizes = New System.Windows.Forms.Button()
-        Me.btn_luggageType = New System.Windows.Forms.Button()
-        Me.btn_brand = New System.Windows.Forms.Button()
+        Me.grp_Customer = New System.Windows.Forms.GroupBox()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.btn_Cart = New System.Windows.Forms.Button()
+        Me.btn_Profile = New System.Windows.Forms.Button()
+        Me.btn_OrderHistory = New System.Windows.Forms.Button()
         Me.grp_Staff = New System.Windows.Forms.GroupBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.btn_staffList = New System.Windows.Forms.Button()
         Me.btn_orderList = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.btn_stafProducts = New System.Windows.Forms.Button()
-        Me.grp_Customer = New System.Windows.Forms.GroupBox()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.btn_Cart = New System.Windows.Forms.Button()
-        Me.btn_Profile = New System.Windows.Forms.Button()
-        Me.btn_OrderHistory = New System.Windows.Forms.Button()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.grp_Setting = New System.Windows.Forms.GroupBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.btn_orderStatus = New System.Windows.Forms.Button()
+        Me.btn_sizes = New System.Windows.Forms.Button()
+        Me.btn_luggageType = New System.Windows.Forms.Button()
+        Me.btn_brand = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btn_customer = New System.Windows.Forms.Button()
+        Me.btn_staff = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.lbl_loginInfo = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.Panel9.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.grp_Setting.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.grp_Staff.SuspendLayout()
-        Me.Panel8.SuspendLayout()
         Me.grp_Customer.SuspendLayout()
         Me.Panel7.SuspendLayout()
+        Me.grp_Staff.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.grp_Setting.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -90,6 +91,20 @@ Partial Class frm_mainmenu_p98822
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(260, 876)
         Me.Panel4.TabIndex = 2
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.AutoScroll = True
+        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox4)
+        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Customer)
+        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Staff)
+        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Setting)
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(260, 876)
+        Me.FlowLayoutPanel1.TabIndex = 0
         '
         'GroupBox4
         '
@@ -126,113 +141,67 @@ Partial Class frm_mainmenu_p98822
         Me.brn_ProductList.Text = "Product Catalogs"
         Me.brn_ProductList.UseVisualStyleBackColor = True
         '
-        'Panel3
+        'grp_Customer
         '
-        Me.Panel3.Controls.Add(Me.btn_customer)
-        Me.Panel3.Controls.Add(Me.btn_staff)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 938)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(260, 123)
-        Me.Panel3.TabIndex = 1
+        Me.grp_Customer.Controls.Add(Me.Panel7)
+        Me.grp_Customer.Enabled = False
+        Me.grp_Customer.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.grp_Customer.Location = New System.Drawing.Point(3, 106)
+        Me.grp_Customer.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Customer.Name = "grp_Customer"
+        Me.grp_Customer.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Customer.Size = New System.Drawing.Size(233, 215)
+        Me.grp_Customer.TabIndex = 8
+        Me.grp_Customer.TabStop = False
+        Me.grp_Customer.Text = "Customer Options"
         '
-        'btn_staff
+        'Panel7
         '
-        Me.btn_staff.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btn_staff.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_staff.Location = New System.Drawing.Point(0, 63)
-        Me.btn_staff.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_staff.Name = "btn_staff"
-        Me.btn_staff.Size = New System.Drawing.Size(260, 60)
-        Me.btn_staff.TabIndex = 6
-        Me.btn_staff.Text = "Staff Login"
-        Me.btn_staff.UseVisualStyleBackColor = True
+        Me.Panel7.Controls.Add(Me.btn_Cart)
+        Me.Panel7.Controls.Add(Me.btn_Profile)
+        Me.Panel7.Controls.Add(Me.btn_OrderHistory)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel7.Location = New System.Drawing.Point(3, 24)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(227, 187)
+        Me.Panel7.TabIndex = 6
         '
-        'Panel2
+        'btn_Cart
         '
-        Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(260, 62)
-        Me.Panel2.TabIndex = 0
+        Me.btn_Cart.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_Cart.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Cart.Location = New System.Drawing.Point(0, 120)
+        Me.btn_Cart.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_Cart.Name = "btn_Cart"
+        Me.btn_Cart.Size = New System.Drawing.Size(227, 60)
+        Me.btn_Cart.TabIndex = 6
+        Me.btn_Cart.Text = "Shopping Cart"
+        Me.btn_Cart.UseVisualStyleBackColor = True
         '
-        'grp_Setting
+        'btn_Profile
         '
-        Me.grp_Setting.Controls.Add(Me.Panel6)
-        Me.grp_Setting.Enabled = False
-        Me.grp_Setting.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.grp_Setting.Location = New System.Drawing.Point(3, 627)
-        Me.grp_Setting.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.grp_Setting.Name = "grp_Setting"
-        Me.grp_Setting.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.grp_Setting.Size = New System.Drawing.Size(233, 273)
-        Me.grp_Setting.TabIndex = 7
-        Me.grp_Setting.TabStop = False
-        Me.grp_Setting.Text = "Setting"
+        Me.btn_Profile.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_Profile.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Profile.Location = New System.Drawing.Point(0, 60)
+        Me.btn_Profile.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_Profile.Name = "btn_Profile"
+        Me.btn_Profile.Size = New System.Drawing.Size(227, 60)
+        Me.btn_Profile.TabIndex = 4
+        Me.btn_Profile.Text = "My Profile"
+        Me.btn_Profile.UseVisualStyleBackColor = True
         '
-        'Panel6
+        'btn_OrderHistory
         '
-        Me.Panel6.Controls.Add(Me.btn_orderStatus)
-        Me.Panel6.Controls.Add(Me.btn_sizes)
-        Me.Panel6.Controls.Add(Me.btn_luggageType)
-        Me.Panel6.Controls.Add(Me.btn_brand)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(3, 24)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(227, 245)
-        Me.Panel6.TabIndex = 0
-        '
-        'btn_orderStatus
-        '
-        Me.btn_orderStatus.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_orderStatus.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_orderStatus.Location = New System.Drawing.Point(0, 180)
-        Me.btn_orderStatus.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_orderStatus.Name = "btn_orderStatus"
-        Me.btn_orderStatus.Size = New System.Drawing.Size(227, 60)
-        Me.btn_orderStatus.TabIndex = 6
-        Me.btn_orderStatus.Text = "Order Status"
-        Me.btn_orderStatus.UseVisualStyleBackColor = True
-        '
-        'btn_sizes
-        '
-        Me.btn_sizes.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_sizes.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_sizes.Location = New System.Drawing.Point(0, 120)
-        Me.btn_sizes.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_sizes.Name = "btn_sizes"
-        Me.btn_sizes.Size = New System.Drawing.Size(227, 60)
-        Me.btn_sizes.TabIndex = 3
-        Me.btn_sizes.Text = "Sizes"
-        Me.btn_sizes.UseVisualStyleBackColor = True
-        '
-        'btn_luggageType
-        '
-        Me.btn_luggageType.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_luggageType.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_luggageType.Location = New System.Drawing.Point(0, 60)
-        Me.btn_luggageType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_luggageType.Name = "btn_luggageType"
-        Me.btn_luggageType.Size = New System.Drawing.Size(227, 60)
-        Me.btn_luggageType.TabIndex = 2
-        Me.btn_luggageType.Text = "Luggage Types"
-        Me.btn_luggageType.UseVisualStyleBackColor = True
-        '
-        'btn_brand
-        '
-        Me.btn_brand.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_brand.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_brand.Location = New System.Drawing.Point(0, 0)
-        Me.btn_brand.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_brand.Name = "btn_brand"
-        Me.btn_brand.Size = New System.Drawing.Size(227, 60)
-        Me.btn_brand.TabIndex = 1
-        Me.btn_brand.Text = "Brands"
-        Me.btn_brand.UseVisualStyleBackColor = True
+        Me.btn_OrderHistory.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_OrderHistory.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_OrderHistory.Location = New System.Drawing.Point(0, 0)
+        Me.btn_OrderHistory.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_OrderHistory.Name = "btn_OrderHistory"
+        Me.btn_OrderHistory.Size = New System.Drawing.Size(227, 60)
+        Me.btn_OrderHistory.TabIndex = 5
+        Me.btn_OrderHistory.Text = "My Previous Order"
+        Me.btn_OrderHistory.UseVisualStyleBackColor = True
         '
         'grp_Staff
         '
@@ -309,91 +278,91 @@ Partial Class frm_mainmenu_p98822
         Me.btn_stafProducts.Text = "Products"
         Me.btn_stafProducts.UseVisualStyleBackColor = True
         '
-        'grp_Customer
+        'grp_Setting
         '
-        Me.grp_Customer.Controls.Add(Me.Panel7)
-        Me.grp_Customer.Enabled = False
-        Me.grp_Customer.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.grp_Customer.Location = New System.Drawing.Point(3, 106)
-        Me.grp_Customer.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.grp_Customer.Name = "grp_Customer"
-        Me.grp_Customer.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.grp_Customer.Size = New System.Drawing.Size(233, 215)
-        Me.grp_Customer.TabIndex = 8
-        Me.grp_Customer.TabStop = False
-        Me.grp_Customer.Text = "Customer Options"
+        Me.grp_Setting.Controls.Add(Me.Panel6)
+        Me.grp_Setting.Enabled = False
+        Me.grp_Setting.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.grp_Setting.Location = New System.Drawing.Point(3, 627)
+        Me.grp_Setting.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Setting.Name = "grp_Setting"
+        Me.grp_Setting.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grp_Setting.Size = New System.Drawing.Size(233, 273)
+        Me.grp_Setting.TabIndex = 7
+        Me.grp_Setting.TabStop = False
+        Me.grp_Setting.Text = "Setting"
         '
-        'Panel7
+        'Panel6
         '
-        Me.Panel7.Controls.Add(Me.btn_Cart)
-        Me.Panel7.Controls.Add(Me.btn_Profile)
-        Me.Panel7.Controls.Add(Me.btn_OrderHistory)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(3, 24)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(227, 187)
-        Me.Panel7.TabIndex = 6
+        Me.Panel6.Controls.Add(Me.btn_orderStatus)
+        Me.Panel6.Controls.Add(Me.btn_sizes)
+        Me.Panel6.Controls.Add(Me.btn_luggageType)
+        Me.Panel6.Controls.Add(Me.btn_brand)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel6.Location = New System.Drawing.Point(3, 24)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(227, 245)
+        Me.Panel6.TabIndex = 0
         '
-        'btn_Cart
+        'btn_orderStatus
         '
-        Me.btn_Cart.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_Cart.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Cart.Location = New System.Drawing.Point(0, 120)
-        Me.btn_Cart.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_Cart.Name = "btn_Cart"
-        Me.btn_Cart.Size = New System.Drawing.Size(227, 60)
-        Me.btn_Cart.TabIndex = 6
-        Me.btn_Cart.Text = "Shopping Cart"
-        Me.btn_Cart.UseVisualStyleBackColor = True
+        Me.btn_orderStatus.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_orderStatus.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_orderStatus.Location = New System.Drawing.Point(0, 180)
+        Me.btn_orderStatus.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_orderStatus.Name = "btn_orderStatus"
+        Me.btn_orderStatus.Size = New System.Drawing.Size(227, 60)
+        Me.btn_orderStatus.TabIndex = 6
+        Me.btn_orderStatus.Text = "Order Status"
+        Me.btn_orderStatus.UseVisualStyleBackColor = True
         '
-        'btn_Profile
+        'btn_sizes
         '
-        Me.btn_Profile.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_Profile.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Profile.Location = New System.Drawing.Point(0, 60)
-        Me.btn_Profile.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_Profile.Name = "btn_Profile"
-        Me.btn_Profile.Size = New System.Drawing.Size(227, 60)
-        Me.btn_Profile.TabIndex = 4
-        Me.btn_Profile.Text = "My Profile"
-        Me.btn_Profile.UseVisualStyleBackColor = True
+        Me.btn_sizes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_sizes.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_sizes.Location = New System.Drawing.Point(0, 120)
+        Me.btn_sizes.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_sizes.Name = "btn_sizes"
+        Me.btn_sizes.Size = New System.Drawing.Size(227, 60)
+        Me.btn_sizes.TabIndex = 3
+        Me.btn_sizes.Text = "Sizes"
+        Me.btn_sizes.UseVisualStyleBackColor = True
         '
-        'btn_OrderHistory
+        'btn_luggageType
         '
-        Me.btn_OrderHistory.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btn_OrderHistory.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_OrderHistory.Location = New System.Drawing.Point(0, 0)
-        Me.btn_OrderHistory.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btn_OrderHistory.Name = "btn_OrderHistory"
-        Me.btn_OrderHistory.Size = New System.Drawing.Size(227, 60)
-        Me.btn_OrderHistory.TabIndex = 5
-        Me.btn_OrderHistory.Text = "My Previous Order"
-        Me.btn_OrderHistory.UseVisualStyleBackColor = True
+        Me.btn_luggageType.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_luggageType.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_luggageType.Location = New System.Drawing.Point(0, 60)
+        Me.btn_luggageType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_luggageType.Name = "btn_luggageType"
+        Me.btn_luggageType.Size = New System.Drawing.Size(227, 60)
+        Me.btn_luggageType.TabIndex = 2
+        Me.btn_luggageType.Text = "Luggage Types"
+        Me.btn_luggageType.UseVisualStyleBackColor = True
         '
-        'Panel5
+        'btn_brand
         '
-        Me.Panel5.Controls.Add(Me.lbl_loginInfo)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(260, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1168, 62)
-        Me.Panel5.TabIndex = 2
+        Me.btn_brand.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btn_brand.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_brand.Location = New System.Drawing.Point(0, 0)
+        Me.btn_brand.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_brand.Name = "btn_brand"
+        Me.btn_brand.Size = New System.Drawing.Size(227, 60)
+        Me.btn_brand.TabIndex = 1
+        Me.btn_brand.Text = "Brands"
+        Me.btn_brand.UseVisualStyleBackColor = True
         '
-        'FlowLayoutPanel1
+        'Panel3
         '
-        Me.FlowLayoutPanel1.AutoScroll = True
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox4)
-        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Customer)
-        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Staff)
-        Me.FlowLayoutPanel1.Controls.Add(Me.grp_Setting)
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(260, 876)
-        Me.FlowLayoutPanel1.TabIndex = 0
+        Me.Panel3.Controls.Add(Me.btn_customer)
+        Me.Panel3.Controls.Add(Me.btn_staff)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel3.Location = New System.Drawing.Point(0, 938)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(260, 123)
+        Me.Panel3.TabIndex = 1
         '
         'btn_customer
         '
@@ -406,6 +375,38 @@ Partial Class frm_mainmenu_p98822
         Me.btn_customer.TabIndex = 7
         Me.btn_customer.Text = "Customer Login"
         Me.btn_customer.UseVisualStyleBackColor = True
+        '
+        'btn_staff
+        '
+        Me.btn_staff.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btn_staff.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_staff.Location = New System.Drawing.Point(0, 63)
+        Me.btn_staff.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btn_staff.Name = "btn_staff"
+        Me.btn_staff.Size = New System.Drawing.Size(260, 60)
+        Me.btn_staff.TabIndex = 6
+        Me.btn_staff.Text = "Staff Login"
+        Me.btn_staff.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.PictureBox1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(260, 62)
+        Me.Panel2.TabIndex = 0
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.lbl_loginInfo)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.Location = New System.Drawing.Point(260, 0)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1168, 62)
+        Me.Panel5.TabIndex = 2
         '
         'lbl_loginInfo
         '
@@ -421,7 +422,7 @@ Partial Class frm_mainmenu_p98822
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
-        Me.PictureBox1.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.logo
+        Me.PictureBox1.BackgroundImage = Global.BagasiStore.My.Resources.Resources.logo
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
@@ -439,25 +440,26 @@ Partial Class frm_mainmenu_p98822
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frm_mainmenu_p98822"
-        Me.Text = "Form1"
+        Me.Text = "Bagasi - The Luggage Store"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
+        Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.grp_Setting.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.grp_Staff.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
         Me.grp_Customer.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
+        Me.grp_Staff.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.grp_Setting.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
-        Me.FlowLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

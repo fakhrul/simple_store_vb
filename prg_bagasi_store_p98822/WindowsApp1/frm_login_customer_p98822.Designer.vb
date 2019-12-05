@@ -22,6 +22,7 @@ Partial Class frm_login_customer_p98822
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_login_customer_p98822))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_signin_email = New System.Windows.Forms.TextBox()
@@ -31,17 +32,17 @@ Partial Class frm_login_customer_p98822
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_signIn = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txt_fullName = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txt_address = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txt_phone = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btn_Register = New System.Windows.Forms.Button()
         Me.txt_password = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.btn_signIn = New System.Windows.Forms.Button()
-        Me.btn_Register = New System.Windows.Forms.Button()
+        Me.txt_phone = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txt_address = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txt_fullName = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -69,7 +70,7 @@ Partial Class frm_login_customer_p98822
         'txt_signin_email
         '
         Me.txt_signin_email.Location = New System.Drawing.Point(177, 158)
-        Me.txt_signin_email.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt_signin_email.Margin = New System.Windows.Forms.Padding(5)
         Me.txt_signin_email.MaxLength = 50
         Me.txt_signin_email.Name = "txt_signin_email"
         Me.txt_signin_email.Size = New System.Drawing.Size(324, 27)
@@ -79,7 +80,7 @@ Partial Class frm_login_customer_p98822
         'txt_signin_password
         '
         Me.txt_signin_password.Location = New System.Drawing.Point(177, 207)
-        Me.txt_signin_password.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt_signin_password.Margin = New System.Windows.Forms.Padding(5)
         Me.txt_signin_password.MaxLength = 50
         Me.txt_signin_password.Name = "txt_signin_password"
         Me.txt_signin_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -90,7 +91,7 @@ Partial Class frm_login_customer_p98822
         'txt_password2
         '
         Me.txt_password2.Location = New System.Drawing.Point(195, 443)
-        Me.txt_password2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt_password2.Margin = New System.Windows.Forms.Padding(5)
         Me.txt_password2.MaxLength = 50
         Me.txt_password2.Name = "txt_password2"
         Me.txt_password2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -100,7 +101,7 @@ Partial Class frm_login_customer_p98822
         'txt_email
         '
         Me.txt_email.Location = New System.Drawing.Point(195, 94)
-        Me.txt_email.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt_email.Margin = New System.Windows.Forms.Padding(5)
         Me.txt_email.MaxLength = 50
         Me.txt_email.Name = "txt_email"
         Me.txt_email.Size = New System.Drawing.Size(324, 27)
@@ -135,13 +136,23 @@ Partial Class frm_login_customer_p98822
         Me.GroupBox1.Controls.Add(Me.txt_signin_password)
         Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(20, 19)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(5)
         Me.GroupBox1.Size = New System.Drawing.Size(573, 611)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Existing Customer"
+        '
+        'btn_signIn
+        '
+        Me.btn_signIn.Location = New System.Drawing.Point(351, 258)
+        Me.btn_signIn.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn_signIn.Name = "btn_signIn"
+        Me.btn_signIn.Size = New System.Drawing.Size(150, 50)
+        Me.btn_signIn.TabIndex = 2
+        Me.btn_signIn.Text = "Sign In"
+        Me.btn_signIn.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -160,76 +171,28 @@ Partial Class frm_login_customer_p98822
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(603, 19)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(5)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(5)
         Me.GroupBox2.Size = New System.Drawing.Size(585, 611)
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "New Customer"
         '
-        'txt_fullName
+        'btn_Register
         '
-        Me.txt_fullName.Location = New System.Drawing.Point(195, 47)
-        Me.txt_fullName.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.txt_fullName.MaxLength = 50
-        Me.txt_fullName.Name = "txt_fullName"
-        Me.txt_fullName.Size = New System.Drawing.Size(324, 27)
-        Me.txt_fullName.TabIndex = 0
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(32, 53)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(88, 19)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Full Name"
-        '
-        'txt_address
-        '
-        Me.txt_address.Location = New System.Drawing.Point(195, 136)
-        Me.txt_address.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.txt_address.MaxLength = 250
-        Me.txt_address.Multiline = True
-        Me.txt_address.Name = "txt_address"
-        Me.txt_address.Size = New System.Drawing.Size(324, 162)
-        Me.txt_address.TabIndex = 2
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(32, 142)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(70, 19)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Address"
-        '
-        'txt_phone
-        '
-        Me.txt_phone.Location = New System.Drawing.Point(195, 310)
-        Me.txt_phone.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.txt_phone.MaxLength = 10
-        Me.txt_phone.Name = "txt_phone"
-        Me.txt_phone.Size = New System.Drawing.Size(324, 27)
-        Me.txt_phone.TabIndex = 3
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(32, 315)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(58, 19)
-        Me.Label7.TabIndex = 12
-        Me.Label7.Text = "Phone"
+        Me.btn_Register.Location = New System.Drawing.Point(369, 491)
+        Me.btn_Register.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn_Register.Name = "btn_Register"
+        Me.btn_Register.Size = New System.Drawing.Size(150, 50)
+        Me.btn_Register.TabIndex = 6
+        Me.btn_Register.Text = "Register"
+        Me.btn_Register.UseVisualStyleBackColor = True
         '
         'txt_password
         '
         Me.txt_password.Location = New System.Drawing.Point(195, 401)
-        Me.txt_password.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txt_password.Margin = New System.Windows.Forms.Padding(5)
         Me.txt_password.MaxLength = 50
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -246,25 +209,63 @@ Partial Class frm_login_customer_p98822
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Password"
         '
-        'btn_signIn
+        'txt_phone
         '
-        Me.btn_signIn.Location = New System.Drawing.Point(337, 258)
-        Me.btn_signIn.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.btn_signIn.Name = "btn_signIn"
-        Me.btn_signIn.Size = New System.Drawing.Size(167, 81)
-        Me.btn_signIn.TabIndex = 2
-        Me.btn_signIn.Text = "Sign In"
-        Me.btn_signIn.UseVisualStyleBackColor = True
+        Me.txt_phone.Location = New System.Drawing.Point(195, 310)
+        Me.txt_phone.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt_phone.MaxLength = 10
+        Me.txt_phone.Name = "txt_phone"
+        Me.txt_phone.Size = New System.Drawing.Size(324, 27)
+        Me.txt_phone.TabIndex = 3
         '
-        'btn_Register
+        'Label7
         '
-        Me.btn_Register.Location = New System.Drawing.Point(355, 507)
-        Me.btn_Register.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.btn_Register.Name = "btn_Register"
-        Me.btn_Register.Size = New System.Drawing.Size(167, 81)
-        Me.btn_Register.TabIndex = 6
-        Me.btn_Register.Text = "Register"
-        Me.btn_Register.UseVisualStyleBackColor = True
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(32, 315)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(58, 19)
+        Me.Label7.TabIndex = 12
+        Me.Label7.Text = "Phone"
+        '
+        'txt_address
+        '
+        Me.txt_address.Location = New System.Drawing.Point(195, 136)
+        Me.txt_address.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt_address.MaxLength = 250
+        Me.txt_address.Multiline = True
+        Me.txt_address.Name = "txt_address"
+        Me.txt_address.Size = New System.Drawing.Size(324, 162)
+        Me.txt_address.TabIndex = 2
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(32, 142)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(70, 19)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Address"
+        '
+        'txt_fullName
+        '
+        Me.txt_fullName.Location = New System.Drawing.Point(195, 47)
+        Me.txt_fullName.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt_fullName.MaxLength = 50
+        Me.txt_fullName.Name = "txt_fullName"
+        Me.txt_fullName.Size = New System.Drawing.Size(324, 27)
+        Me.txt_fullName.TabIndex = 0
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(32, 53)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(88, 19)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Full Name"
         '
         'frm_login_customer_p98822
         '
@@ -274,7 +275,8 @@ Partial Class frm_login_customer_p98822
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "frm_login_customer_p98822"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Customer Login"

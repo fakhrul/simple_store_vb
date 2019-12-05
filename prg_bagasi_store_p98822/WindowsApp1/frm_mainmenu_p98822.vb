@@ -46,12 +46,23 @@ Public Class frm_mainmenu_p98822
         Dim frm As New frm_shoppingcart_p98822
         frm.MdiParent = Me
         AddHandler frm.BuyClick, AddressOf Me.HandleBuyClick
+        AddHandler frm.ClearCart, AddressOf Me.HandleClearCart
         frm.Dock = DockStyle.Fill
         frm.Show()
     End Sub
 
+    Private Sub HandleClearCart(sender As Object, e As EventArgs)
+        btn_Cart.Text = "Shopping Cart " & "(" & shoppingCart.Count.ToString & ")"
+        If shoppingCart.Count = 0 Then
+            btn_Cart.ForeColor = Color.Red
+        Else
+            btn_Cart.ForeColor = Color.Green
+
+        End If
+    End Sub
+
     Private Sub btn_stafProducts_Click(sender As Object, e As EventArgs) Handles btn_stafProducts.Click
-        Dim frm As New frm_stafflist_p98822
+        Dim frm As New frm_productlist_p98822
         frm.MdiParent = Me
         frm.Dock = DockStyle.Fill
         frm.Show()

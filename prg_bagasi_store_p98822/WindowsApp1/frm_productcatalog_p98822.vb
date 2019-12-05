@@ -15,6 +15,7 @@ Public Class frm_productcatalog_p98822
             RefreshTypeOptions()
             RefreshDefaultProducts()
             cmb_order.SelectedIndex = 0
+            cmb_order_desc.SelectedIndex = 0
         Catch ex As DivideByZeroException
             MessageBox.Show(String.Format("Exception caught: {0}", ex))
         End Try
@@ -23,7 +24,38 @@ Public Class frm_productcatalog_p98822
 
     Private Sub RefreshDefaultProducts()
 
+        FlowLayoutPanel1.Controls.Clear()
+
         Dim sql As String = "select P.fld_product_id, P.fld_product_name, P.fld_price,  B.fld_brand_name from tbl_product_p98822 as P, tbl_brand_p98822 as B where P.fld_brand = B.fld_brand_id"
+
+        If cmb_brand.SelectedValue <> 0 Then
+            sql += " AND P.fld_brand = " & cmb_brand.SelectedValue
+        End If
+
+        If cmb_size.SelectedValue <> 0 Then
+            sql += " AND P.fld_size = " & cmb_size.SelectedValue
+        End If
+
+        If cmb_type.SelectedValue <> 0 Then
+            sql += " AND P.fld_type = " & cmb_type.SelectedValue
+        End If
+
+        If cmb_order.SelectedIndex = 0 Then
+
+            sql += " ORDER BY P.fld_product_name"
+        ElseIf cmb_order.SelectedIndex = 1 Then
+            sql += " ORDER BY B.fld_brand_name"
+        ElseIf cmb_order.SelectedIndex = 2 Then
+            sql += " ORDER BY P.fld_price"
+        Else
+            sql += " ORDER BY P.fld_product_name"
+        End If
+
+        If cmb_order_desc.SelectedIndex Then
+            sql += " DESC"
+        Else
+            sql += " ASC"
+        End If
 
         Using connection As OleDbConnection = New OleDbConnection(myconnection)
             Dim command As OleDbCommand = New OleDbCommand(sql)
@@ -43,7 +75,7 @@ Public Class frm_productcatalog_p98822
                     Try
                         uc.PictureImage = Image.FromFile("pictures/" & reader.Item(0) & ".jpg")
                     Catch ex As Exception
-                        uc.PictureImage = Image.FromFile("pictures/nophoto.jpg")
+                        uc.PictureImage = Image.FromFile("pictures/nophoto.png")
 
                     End Try
                     AddHandler uc.BuyClick, AddressOf Me.HandleBuyClick

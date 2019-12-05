@@ -25,6 +25,7 @@ Partial Class frm_productcatalog_p98822
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.btn_Search = New System.Windows.Forms.Button()
         Me.cmb_order = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -37,7 +38,7 @@ Partial Class frm_productcatalog_p98822
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.cmb_order_desc = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -65,6 +66,7 @@ Partial Class frm_productcatalog_p98822
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.cmb_order_desc)
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.btn_Search)
         Me.Panel2.Controls.Add(Me.cmb_order)
@@ -82,9 +84,18 @@ Partial Class frm_productcatalog_p98822
         Me.Panel2.Size = New System.Drawing.Size(1252, 68)
         Me.Panel2.TabIndex = 1
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(1003, 26)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Clear"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'btn_Search
         '
-        Me.btn_Search.Location = New System.Drawing.Point(804, 26)
+        Me.btn_Search.Location = New System.Drawing.Point(922, 26)
         Me.btn_Search.Name = "btn_Search"
         Me.btn_Search.Size = New System.Drawing.Size(75, 23)
         Me.btn_Search.TabIndex = 11
@@ -95,7 +106,7 @@ Partial Class frm_productcatalog_p98822
         '
         Me.cmb_order.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_order.FormattingEnabled = True
-        Me.cmb_order.Items.AddRange(New Object() {"Name", "Brand", "Size", "Type", "Price"})
+        Me.cmb_order.Items.AddRange(New Object() {"Name", "Brand", "Price"})
         Me.cmb_order.Location = New System.Drawing.Point(651, 28)
         Me.cmb_order.Name = "cmb_order"
         Me.cmb_order.Size = New System.Drawing.Size(121, 21)
@@ -191,16 +202,17 @@ Partial Class frm_productcatalog_p98822
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1252, 332)
         Me.FlowLayoutPanel1.TabIndex = 0
         '
-        'Button2
+        'cmb_order_desc
         '
-        Me.Button2.Location = New System.Drawing.Point(885, 26)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "Clear"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.cmb_order_desc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_order_desc.FormattingEnabled = True
+        Me.cmb_order_desc.Items.AddRange(New Object() {"Descending", "Ascending"})
+        Me.cmb_order_desc.Location = New System.Drawing.Point(778, 28)
+        Me.cmb_order_desc.Name = "cmb_order_desc"
+        Me.cmb_order_desc.Size = New System.Drawing.Size(121, 21)
+        Me.cmb_order_desc.TabIndex = 13
         '
-        'frm_productlist_p98822
+        'frm_productcatalog_p98822
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -209,7 +221,7 @@ Partial Class frm_productcatalog_p98822
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frm_productlist_p98822"
+        Me.Name = "frm_productcatalog_p98822"
         Me.Text = "frm_products_p98822"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
@@ -235,4 +247,5 @@ Partial Class frm_productcatalog_p98822
     Friend WithEvents Label2 As Label
     Friend WithEvents btn_Search As Button
     Private WithEvents Button2 As Button
+    Friend WithEvents cmb_order_desc As ComboBox
 End Class

@@ -26,4 +26,19 @@
         Return mydata
 
     End Function
+
+    Private Sub dg_list_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dg_list.CellClick
+
+        Try
+            Dim current_row As Integer = dg_list.CurrentRow.Index
+            Dim selected_code = dg_list(0, current_row).Value
+
+            Dim orderItemForm As New frm_orderItem_p98822
+            orderItemForm.OrderId = selected_code
+            orderItemForm.ShowDialog()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 End Class

@@ -29,6 +29,7 @@ Partial Class frm_orderlist_p98822
         Me.dg_list = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.txt_full_name = New System.Windows.Forms.TextBox()
         Me.txt_remarks = New System.Windows.Forms.TextBox()
         Me.txt_date = New System.Windows.Forms.TextBox()
         Me.cmb_status = New System.Windows.Forms.ComboBox()
@@ -45,7 +46,7 @@ Partial Class frm_orderlist_p98822
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.btn_refresh = New System.Windows.Forms.Button()
-        Me.txt_full_name = New System.Windows.Forms.TextBox()
+        Me.btn_OrderItem = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -139,6 +140,14 @@ Partial Class frm_orderlist_p98822
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(498, 588)
         Me.Panel6.TabIndex = 1
+        '
+        'txt_full_name
+        '
+        Me.txt_full_name.Location = New System.Drawing.Point(128, 78)
+        Me.txt_full_name.Name = "txt_full_name"
+        Me.txt_full_name.ReadOnly = True
+        Me.txt_full_name.Size = New System.Drawing.Size(358, 20)
+        Me.txt_full_name.TabIndex = 17
         '
         'txt_remarks
         '
@@ -255,6 +264,7 @@ Partial Class frm_orderlist_p98822
         '
         'Panel5
         '
+        Me.Panel5.Controls.Add(Me.btn_OrderItem)
         Me.Panel5.Controls.Add(Me.btn_add)
         Me.Panel5.Controls.Add(Me.btn_refresh)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -281,13 +291,15 @@ Partial Class frm_orderlist_p98822
         Me.btn_refresh.Text = "Refresh"
         Me.btn_refresh.UseVisualStyleBackColor = True
         '
-        'txt_full_name
+        'btn_OrderItem
         '
-        Me.txt_full_name.Location = New System.Drawing.Point(128, 78)
-        Me.txt_full_name.Name = "txt_full_name"
-        Me.txt_full_name.ReadOnly = True
-        Me.txt_full_name.Size = New System.Drawing.Size(358, 20)
-        Me.txt_full_name.TabIndex = 17
+        Me.btn_OrderItem.Location = New System.Drawing.Point(112, 6)
+        Me.btn_OrderItem.Name = "btn_OrderItem"
+        Me.btn_OrderItem.Size = New System.Drawing.Size(100, 50)
+        Me.btn_OrderItem.TabIndex = 2
+        Me.btn_OrderItem.Text = "View Order Item"
+        Me.btn_OrderItem.UseVisualStyleBackColor = True
+        Me.btn_OrderItem.Visible = False
         '
         'frm_orderlist_p98822
         '
@@ -336,4 +348,5 @@ Partial Class frm_orderlist_p98822
     Friend WithEvents txt_code As TextBox
     Friend WithEvents txt_id As TextBox
     Friend WithEvents txt_full_name As TextBox
+    Friend WithEvents btn_OrderItem As Button
 End Class

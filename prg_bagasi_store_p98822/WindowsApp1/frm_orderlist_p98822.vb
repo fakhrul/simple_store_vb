@@ -183,4 +183,40 @@ Public Class frm_orderlist_p98822
 
     End Sub
 
+    Private Sub btn_OrderItem_Click(sender As Object, e As EventArgs) Handles btn_OrderItem.Click
+
+        Try
+
+            Dim selected_code = Integer.Parse(txt_id.Text)
+
+            Dim orderItemForm As New frm_orderItem_p98822
+            orderItemForm.OrderId = selected_code
+            orderItemForm.ShowDialog()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub txt_id_TextChanged(sender As Object, e As EventArgs) Handles txt_id.TextChanged
+        If String.IsNullOrEmpty(txt_id.Text) Then
+            btn_OrderItem.Visible = False
+        Else
+            btn_OrderItem.Visible = True
+        End If
+    End Sub
+
+    Private Sub dg_list_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dg_list.CellDoubleClick
+        Try
+            Dim current_row As Integer = dg_list.CurrentRow.Index
+            Dim selected_code = dg_list(0, current_row).Value
+
+            Dim orderItemForm As New frm_orderItem_p98822
+            orderItemForm.OrderId = selected_code
+            orderItemForm.ShowDialog()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 End Class
